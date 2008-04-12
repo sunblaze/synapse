@@ -12,22 +12,13 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
-  adapter: mysql
-  database: synapse_development
-  username: root
-  password:
-  host: localhost
-  
+  adapter: sqlite3
+  dbfile: db/dev.db
+
 test:
-  adapter: mysql
-  database: synapse_test
-  username: root
-  password:
-  host: localhost
+  adapter: sqlite3
+  dbfile: db/test.db
 
 production:
-  adapter: mysql
-  database: synapse_production
-  username: root
-  password: 
-  host: localhost
+  adapter: sqlite3
+  dbfile: db/prod.db

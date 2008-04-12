@@ -1,0 +1,20 @@
+<h1>Listing functions</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% for function in @functions %>
+  <tr>
+    <td><%=h function.name %></td>
+    <td><%= link_to 'Show', function %></td>
+    <td><%= link_to 'Edit', edit_function_path(function) %></td>
+    <td><%= link_to 'Destroy', function, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New function', new_function_path %>

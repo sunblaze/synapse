@@ -1,0 +1,17 @@
+<h1>Editing body</h1>
+
+<%= error_messages_for :body %>
+
+<% form_for(@body) do |f| %>
+  <p>
+    <b>Clause</b><br />
+    <%= f.text_field :clause_id %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @body %> |
+<%= link_to 'Back', bodies_path %>

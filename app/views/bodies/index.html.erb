@@ -1,0 +1,20 @@
+<h1>Listing bodies</h1>
+
+<table>
+  <tr>
+    <th>Clause</th>
+  </tr>
+
+<% for body in @bodies %>
+  <tr>
+    <td><%=h body.clause_id %></td>
+    <td><%= link_to 'Show', body %></td>
+    <td><%= link_to 'Edit', edit_body_path(body) %></td>
+    <td><%= link_to 'Destroy', body, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New body', new_body_path %>

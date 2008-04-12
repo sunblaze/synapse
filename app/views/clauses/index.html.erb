@@ -1,0 +1,22 @@
+<h1>Listing clauses</h1>
+
+<table>
+  <tr>
+    <th>Function</th>
+    <th>Order</th>
+  </tr>
+
+<% for clause in @clauses %>
+  <tr>
+    <td><%=h clause.function_id %></td>
+    <td><%=h clause.order %></td>
+    <td><%= link_to 'Show', clause %></td>
+    <td><%= link_to 'Edit', edit_clause_path(clause) %></td>
+    <td><%= link_to 'Destroy', clause, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New clause', new_clause_path %>

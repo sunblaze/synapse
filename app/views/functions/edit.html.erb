@@ -1,0 +1,17 @@
+<h1>Editing function</h1>
+
+<%= error_messages_for :function %>
+
+<% form_for(@function) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @function %> |
+<%= link_to 'Back', functions_path %>

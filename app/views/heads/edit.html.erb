@@ -1,0 +1,17 @@
+<h1>Editing head</h1>
+
+<%= error_messages_for :head %>
+
+<% form_for(@head) do |f| %>
+  <p>
+    <b>Clause</b><br />
+    <%= f.text_field :clause_id %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @head %> |
+<%= link_to 'Back', heads_path %>

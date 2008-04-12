@@ -1,0 +1,2 @@
+module HeadsHelper
+end

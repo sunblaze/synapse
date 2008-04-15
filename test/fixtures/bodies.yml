@@ -1,7 +1,4 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  clause_id: 1
-
-two:
-  clause_id: 1
+io_format:
+  clause: puts_hello_world

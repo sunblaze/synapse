@@ -21,23 +21,23 @@ class ClausesControllerTest < ActionController::TestCase
   end
 
   def test_should_show_clause
-    get :show, :id => clauses(:one).id
+    get :show, :id => clauses(:puts_hello_world).id
     assert_response :success
   end
 
   def test_should_get_edit
-    get :edit, :id => clauses(:one).id
+    get :edit, :id => clauses(:puts_hello_world).id
     assert_response :success
   end
 
   def test_should_update_clause
-    put :update, :id => clauses(:one).id, :clause => { }
+    put :update, :id => clauses(:puts_hello_world).id, :clause => { }
     assert_redirected_to clause_path(assigns(:clause))
   end
 
   def test_should_destroy_clause
     assert_difference('Clause.count', -1) do
-      delete :destroy, :id => clauses(:one).id
+      delete :destroy, :id => clauses(:puts_hello_world).id
     end
 
     assert_redirected_to clauses_path

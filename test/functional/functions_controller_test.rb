@@ -21,23 +21,23 @@ class FunctionsControllerTest < ActionController::TestCase
   end
 
   def test_should_show_function
-    get :show, :id => functions(:one).id
+    get :show, :id => functions(:main).id
     assert_response :success
   end
 
   def test_should_get_edit
-    get :edit, :id => functions(:one).id
+    get :edit, :id => functions(:main).id
     assert_response :success
   end
 
   def test_should_update_function
-    put :update, :id => functions(:one).id, :function => { }
+    put :update, :id => functions(:main).id, :function => { }
     assert_redirected_to function_path(assigns(:function))
   end
 
   def test_should_destroy_function
     assert_difference('Function.count', -1) do
-      delete :destroy, :id => functions(:one).id
+      delete :destroy, :id => functions(:main).id
     end
 
     assert_redirected_to functions_path

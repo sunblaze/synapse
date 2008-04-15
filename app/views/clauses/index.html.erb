@@ -9,7 +9,7 @@
 <% for clause in @clauses %>
   <tr>
     <td><%=h clause.function_id %></td>
-    <td><%=h clause.order %></td>
+    <td><%=h clause.position %></td>
     <td><%= link_to 'Show', clause %></td>
     <td><%= link_to 'Edit', edit_clause_path(clause) %></td>
     <td><%= link_to 'Destroy', clause, :confirm => 'Are you sure?', :method => :delete %></td>

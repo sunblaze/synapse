@@ -7,6 +7,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :functions
 
+	map.resources :generator, :singular => 'generate'
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

@@ -1,9 +1,6 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  function_id: 1
-  order: 1
+puts_hello_world:
+  function: main
+  position: 1
 
-two:
-  function_id: 1
-  order: 1

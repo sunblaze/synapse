@@ -21,23 +21,23 @@ class HeadsControllerTest < ActionController::TestCase
   end
 
   def test_should_show_head
-    get :show, :id => heads(:one).id
+    get :show, :id => heads(:any_one_arg).id
     assert_response :success
   end
 
   def test_should_get_edit
-    get :edit, :id => heads(:one).id
+    get :edit, :id => heads(:any_one_arg).id
     assert_response :success
   end
 
   def test_should_update_head
-    put :update, :id => heads(:one).id, :head => { }
+    put :update, :id => heads(:any_one_arg).id, :head => { }
     assert_redirected_to head_path(assigns(:head))
   end
 
   def test_should_destroy_head
     assert_difference('Head.count', -1) do
-      delete :destroy, :id => heads(:one).id
+      delete :destroy, :id => heads(:any_one_arg).id
     end
 
     assert_redirected_to heads_path

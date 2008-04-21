@@ -1,0 +1,23 @@
+hello_world_io:
+  primary_expr: hello_world_io
+  atom_literal: io
+
+hello_world_format:
+  primary_expr: hello_world_format
+  atom_literal: format
+
+hello_world_2_io:
+  primary_expr: hello_world_2_io
+  atom_literal: io
+
+hello_world_2_format:
+  primary_expr: hello_world_2_format
+  atom_literal: format
+
+hi_there_io:
+  primary_expr: hi_there_io
+  atom_literal: io
+
+hi_there_format:
+  primary_expr: hi_there_format
+  atom_literal: format

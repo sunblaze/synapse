@@ -1,0 +1,9 @@
+#!/usr/bin/env escript
+
+<% @mawjewl.functions.each do |function| -%>
+<%    function.clauses.each_with_index do |clause,clause_i| -%>
+<%=     function.name %>(<%= clause.head.patterns.join(',') %>) ->
+<%=   clause.body.expressions.to_s -%>
+<%=     (clause_i == function.clauses.size-1)?'.':';' %>
+<%    end -%>
+<% end -%>

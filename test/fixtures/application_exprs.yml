@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+puts_hello_world:
+  expression: puts_hello_world
+  apply: true
+
+puts_hello_world_2:
+  expression: puts_hello_world_2
+  apply: true
+
+puts_hi_there:
+  expression: puts_hi_there
+  apply: true

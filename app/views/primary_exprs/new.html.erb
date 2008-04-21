@@ -1,0 +1,21 @@
+<h1>New primary_expr</h1>
+
+<%= error_messages_for :primary_expr %>
+
+<% form_for(@primary_expr) do |f| %>
+  <p>
+    <b>Application expr</b><br />
+    <%= f.text_field :application_expr_id %>
+  </p>
+
+  <p>
+    <b>Position</b><br />
+    <%= f.text_field :position %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', primary_exprs_path %>

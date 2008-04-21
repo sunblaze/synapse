@@ -1,0 +1,13 @@
+<p>
+  <b>Body:</b>
+  <%=h @expression.body_id %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @expression.position %>
+</p>
+
+
+<%= link_to 'Edit', edit_expression_path(@expression) %> |
+<%= link_to 'Back', expressions_path %>

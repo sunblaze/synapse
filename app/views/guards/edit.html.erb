@@ -1,0 +1,17 @@
+<h1>Editing guard</h1>
+
+<%= error_messages_for :guard %>
+
+<% form_for(@guard) do |f| %>
+  <p>
+    <b>Head</b><br />
+    <%= f.text_field :head_id %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @guard %> |
+<%= link_to 'Back', guards_path %>

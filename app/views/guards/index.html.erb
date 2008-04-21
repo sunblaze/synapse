@@ -1,0 +1,20 @@
+<h1>Listing guards</h1>
+
+<table>
+  <tr>
+    <th>Head</th>
+  </tr>
+
+<% for guard in @guards %>
+  <tr>
+    <td><%=h guard.head_id %></td>
+    <td><%= link_to 'Show', guard %></td>
+    <td><%= link_to 'Edit', edit_guard_path(guard) %></td>
+    <td><%= link_to 'Destroy', guard, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New guard', new_guard_path %>

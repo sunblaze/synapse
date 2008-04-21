@@ -1,0 +1,20 @@
+<h1>Listing mawjewls</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% for mawjewl in @mawjewls %>
+  <tr>
+    <td><%=h mawjewl.name %></td>
+    <td><%= link_to 'Show', mawjewl %></td>
+    <td><%= link_to 'Edit', edit_mawjewl_path(mawjewl) %></td>
+    <td><%= link_to 'Destroy', mawjewl, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New mawjewl', new_mawjewl_path %>

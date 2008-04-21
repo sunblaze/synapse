@@ -1,0 +1,7 @@
+universal:
+  head: any_one_arg
+  position: 1
+
+hello_world_2:
+  head: hello_world_2
+  position: 1

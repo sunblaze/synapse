@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+hello_world_io:
+  application_expr: puts_hello_world
+  position: 0
+
+hello_world_format:
+  application_expr: puts_hello_world
+  position: 1
+
+hello_world_2_io:
+  application_expr: puts_hello_world_2
+  position: 0
+
+hello_world_2_format:
+  application_expr: puts_hello_world_2
+  position: 1
+
+hi_there_io:
+  application_expr: puts_hi_there
+  position: 0
+  
+hi_there_format:
+  application_expr: puts_hi_there
+  position: 1

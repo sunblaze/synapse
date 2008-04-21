@@ -1,0 +1,22 @@
+<h1>Listing primary_exprs</h1>
+
+<table>
+  <tr>
+    <th>Application expr</th>
+    <th>Position</th>
+  </tr>
+
+<% for primary_expr in @primary_exprs %>
+  <tr>
+    <td><%=h primary_expr.application_expr_id %></td>
+    <td><%=h primary_expr.position %></td>
+    <td><%= link_to 'Show', primary_expr %></td>
+    <td><%= link_to 'Edit', edit_primary_expr_path(primary_expr) %></td>
+    <td><%= link_to 'Destroy', primary_expr, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New primary_expr', new_primary_expr_path %>

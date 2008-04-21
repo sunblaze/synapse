@@ -1,0 +1,17 @@
+<h1>Editing atomic_literal</h1>
+
+<%= error_messages_for :atomic_literal %>
+
+<% form_for(@atomic_literal) do |f| %>
+  <p>
+    <b>Primary expr</b><br />
+    <%= f.text_field :primary_expr %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @atomic_literal %> |
+<%= link_to 'Back', atomic_literals_path %>

@@ -1,0 +1,22 @@
+<h1>Editing pattern</h1>
+
+<%= error_messages_for :pattern %>
+
+<% form_for(@pattern) do |f| %>
+  <p>
+    <b>Head</b><br />
+    <%= f.text_field :head_id %>
+  </p>
+
+  <p>
+    <b>Position</b><br />
+    <%= f.text_field :position %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @pattern %> |
+<%= link_to 'Back', patterns_path %>

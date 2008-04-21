@@ -1,0 +1,17 @@
+<h1>Editing mawjewl</h1>
+
+<%= error_messages_for :mawjewl %>
+
+<% form_for(@mawjewl) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @mawjewl %> |
+<%= link_to 'Back', mawjewls_path %>

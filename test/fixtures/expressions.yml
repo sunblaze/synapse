@@ -1,0 +1,8 @@
+puts_hello_world:
+  body: io_format
+
+puts_hello_world_2:
+  body: hello_world_2_io_format
+
+puts_hi_there:
+  body: hello_world_2_io_format

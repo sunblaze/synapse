@@ -1,0 +1,22 @@
+<h1>Editing expression</h1>
+
+<%= error_messages_for :expression %>
+
+<% form_for(@expression) do |f| %>
+  <p>
+    <b>Body</b><br />
+    <%= f.text_field :body_id %>
+  </p>
+
+  <p>
+    <b>Position</b><br />
+    <%= f.text_field :position %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @expression %> |
+<%= link_to 'Back', expressions_path %>

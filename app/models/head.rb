@@ -1,7 +1,5 @@
 class Head < ActiveRecord::Base
 	belongs_to :clause
-	
-	def pattern
-		'_'
-	end
+	has_many :patterns
+	has_one :guard
 end

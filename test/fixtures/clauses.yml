@@ -3,4 +3,8 @@
 puts_hello_world:
   function: main
   position: 1
+  
+puts_hello_world_2:
+  function: hello_world_2_main
+  position: 1
 

@@ -2,3 +2,6 @@
 
 any_one_arg:
   clause: puts_hello_world
+
+hello_world_2:
+  clause: puts_hello_world_2

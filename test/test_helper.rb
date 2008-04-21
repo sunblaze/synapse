@@ -35,4 +35,14 @@ class Test::Unit::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+	def assert_response_equals_file(file_name)
+		File.open(File.dirname(__FILE__) + "/fixtures/output/#{file_name}") do |file|
+			require 'generator'
+			
+			gen = SyncEnumerator.new(file, @response.body)
+			gen.each do|line, create|
+				assert_equal line, create
+			end
+		end
+	end
 end

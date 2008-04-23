@@ -6,3 +6,12 @@ puts_hello_world_2:
 
 puts_hi_there:
   body: hello_world_2_io_format
+
+hello_world:
+  parent_application_expr: puts_hello_world
+
+hello_world_2:
+  parent_application_expr: puts_hello_world_2
+
+hi_there:
+  parent_application_expr: puts_hi_there

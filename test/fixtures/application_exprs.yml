@@ -11,3 +11,12 @@ puts_hello_world_2:
 puts_hi_there:
   expression: puts_hi_there
   apply: true
+
+hello_world:
+  expression: hello_world
+
+hello_world_2:
+  expression: hello_world_2
+
+hi_there:
+  expression: hi_there

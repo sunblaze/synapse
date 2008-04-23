@@ -21,3 +21,12 @@ hi_there_io:
 hi_there_format:
   primary_expr: hi_there_format
   atom_literal: format
+
+hello_world:
+  primary_expr: hello_world
+
+hello_world_2:
+  primary_expr: hello_world_2
+
+hi_there:
+  primary_expr: hi_there

@@ -10,6 +10,5 @@ class ApplicationExpr < ActiveRecord::Base
 		else
 			primary_exprs.first.to_s
 		end
-		#'io:format("Hello world\n")'
 	end
 end

@@ -1,0 +1,22 @@
+<h1>Listing string_literals</h1>
+
+<table>
+  <tr>
+    <th>Atomic literal</th>
+    <th>Characters</th>
+  </tr>
+
+<% for string_literal in @string_literals %>
+  <tr>
+    <td><%=h string_literal.atomic_literal_id %></td>
+    <td><%=h string_literal.characters %></td>
+    <td><%= link_to 'Show', string_literal %></td>
+    <td><%= link_to 'Edit', edit_string_literal_path(string_literal) %></td>
+    <td><%= link_to 'Destroy', string_literal, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New string_literal', new_string_literal_path %>

@@ -1,0 +1,11 @@
+hello_world:
+  atomic_literal: hello_world
+  characters: Hello world\n
+
+hello_world_2:
+  atomic_literal: hello_world_2
+  characters: Hello world\n
+
+hi_there:
+  atomic_literal: hi_there
+  characters: Hi there\n

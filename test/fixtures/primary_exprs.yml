@@ -23,3 +23,12 @@ hi_there_io:
 hi_there_format:
   application_expr: puts_hi_there
   position: 1
+
+hello_world:
+  application_expr: hello_world
+
+hello_world_2:
+  application_expr: hello_world_2
+
+hi_there:
+  application_expr: hi_there

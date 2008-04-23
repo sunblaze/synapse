@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 17) do
+ActiveRecord::Schema.define(:version => 18) do
 
   create_table "application_exprs", :force => true do |t|
     t.integer  "expression_id"
@@ -88,6 +88,13 @@ ActiveRecord::Schema.define(:version => 17) do
   create_table "primary_exprs", :force => true do |t|
     t.integer  "application_expr_id"
     t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "string_literals", :force => true do |t|
+    t.integer  "atomic_literal_id"
+    t.text     "characters"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

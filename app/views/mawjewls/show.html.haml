@@ -1,0 +1,15 @@
+- content_for :stylesheets do
+  = stylesheet_link_tag 'mawjewls/show'
+
+%p
+  %b Name:
+  =h @mawjewl.name
+= link_to 'Edit', edit_mawjewl_path(@mawjewl)
+|
+= link_to 'Back', mawjewls_path
+
+.mawjewl_contents_edit
+  .function 
+    .name main
+    .clause
+      .pattern _

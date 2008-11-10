@@ -9,3 +9,8 @@ hello_world_2:
 hi_there:
   atomic_literal: hi_there
   characters: Hi there\n
+
+# Format Number
+format_number_string_literal:
+  atomic_literal: format_number_atomic_literal_string
+  characters: Here is a number:~B~n

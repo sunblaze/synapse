@@ -5,3 +5,7 @@ universal:
 hello_world_2:
   head: hello_world_2
   position: 1
+
+format_number_pattern:
+  head: format_number_head
+  position: 1

@@ -14,6 +14,7 @@ class Expression < ActiveRecord::Base
 	belongs_to :body
 	has_one :application_expr
 	belongs_to :parent_application_expr, :class_name => 'ApplicationExpr', :foreign_key => :application_expr_id
+	belongs_to :list
 	
 	def to_s
 		application_expr.to_s

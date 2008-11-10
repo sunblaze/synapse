@@ -40,6 +40,9 @@ class Test::Unit::TestCase
 			require 'generator'
 			
 			gen = SyncEnumerator.new(file, @response.body)
+			File.open("/tmp/synergy_#{file_name}",'w') do|response_file|
+			  response_file << @response.body
+			end
 			gen.each do|line, create|
 				assert_equal line, create
 			end

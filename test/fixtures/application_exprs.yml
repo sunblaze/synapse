@@ -20,3 +20,18 @@ hello_world_2:
 
 hi_there:
   expression: hi_there
+
+
+# Format Number
+format_number_application_expr:
+  expression: format_number_expression
+  apply: true
+
+format_number_application_expr_string:
+  expression: format_number_expression_string
+
+format_number_application_expr_list:
+  expression: format_number_expression_list
+
+format_number_application_expr_number:
+  expression: format_number_expression_number

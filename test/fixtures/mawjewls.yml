@@ -4,3 +4,6 @@ hello_world:
 
 hello_world_2:
   name: hello_world_2
+  
+format_number:
+  name: format_number

@@ -1,15 +1,15 @@
 - content_for :stylesheets do
   = stylesheet_link_tag 'mawjewls/show'
 
-%p
-  %b Name:
-  =h @mawjewl.name
 = link_to 'Edit', edit_mawjewl_path(@mawjewl)
 |
 = link_to 'Back', mawjewls_path
 
+%h1= h @mawjewl.name
+
 .mawjewl_contents_edit
-  .function 
-    .name main
-    .clause
-      .pattern _
+  - form_for(@contents, :url => "") do |f|
+    .function 
+      %input.name{:type => 'textarea', :value => 'main'}
+      %span.clause
+        %span.pattern _

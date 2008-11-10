@@ -1,2 +1,6 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+$().ready(function() {
+	// $('input.name').keydown(function(){
+	// 	var entered_val = $(this).val()
+	// 	$(this).attr('value','')
+	// })
+});

@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :lists
+
   map.resources :string_literals
 
   map.resources :atom_literals

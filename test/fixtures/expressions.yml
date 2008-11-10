@@ -15,3 +15,17 @@ hello_world_2:
 
 hi_there:
   parent_application_expr: puts_hi_there
+
+
+#Format Number
+format_number_expression:
+  body: format_number_body
+
+format_number_expression_string:
+  parent_application_expr: format_number_application_expr
+
+format_number_expression_list:
+  parent_application_expr: format_number_application_expr
+
+format_number_expression_number:
+  list: format_number_list

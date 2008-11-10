@@ -14,6 +14,7 @@ class MawjewlsController < ApplicationController
   # GET /mawjewls/1.xml
   def show
     @mawjewl = Mawjewl.find(params[:id])
+    @contents = MawjewlContentForm.new
 
     respond_to do |format|
       format.html # show.html.erb

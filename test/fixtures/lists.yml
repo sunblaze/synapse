@@ -1,0 +1,3 @@
+# Format Number
+format_number_list:
+  atomic_literal: format_number_atomic_literal_list

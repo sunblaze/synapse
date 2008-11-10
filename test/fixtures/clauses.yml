@@ -8,3 +8,7 @@ puts_hello_world_2:
   function: hello_world_2_main
   position: 1
 
+format_number_clause:
+  function: format_number_main
+  position: 1
+

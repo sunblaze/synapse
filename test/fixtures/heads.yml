@@ -5,3 +5,6 @@ any_one_arg:
 
 hello_world_2:
   clause: puts_hello_world_2
+
+format_number_head:
+  clause: format_number_clause

@@ -15,4 +15,10 @@ class GeneratorControllerTest < ActionController::TestCase
 		post :create, :id => mawjewls('hello_world_2').id
 		assert_response_equals_file 'hello2'
 	end
+	
+	def test_format_number
+	  debugger
+	  post :create, :id => mawjewls('format_number').id
+		assert_response_equals_file 'format_number'
+  end
 end

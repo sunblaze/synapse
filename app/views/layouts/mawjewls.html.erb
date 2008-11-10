@@ -6,7 +6,10 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Mawjewls: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'scaffold' %>
-	<%= yield :stylesheets %>
+  <%= yield :stylesheets %>
+  <%= javascript_include_tag "jquery-1.2.6.js" %>
+  <%= javascript_include_tag "jquery.elastic.js" %>
+  <%= javascript_include_tag "application.js" %>
 </head>
 <body>
 

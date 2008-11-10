@@ -30,3 +30,23 @@ hello_world_2:
 
 hi_there:
   primary_expr: hi_there
+
+
+# Format Number
+format_number_atomic_literal_io:
+  primary_expr: format_number_primary_expr_io
+  atom_literal: io
+
+format_number_atomic_literal_format:
+  primary_expr: format_number_primary_expr_format
+  atom_literal: format
+  
+format_number_atomic_literal_string:
+  primary_expr: format_number_primary_expr_string
+
+format_number_atomic_literal_list:
+  primary_expr: format_number_primary_expr_list
+
+format_number_atomic_literal_number:
+  primary_expr: format_number_primary_expr_number
+  atom_literal: twenty-five

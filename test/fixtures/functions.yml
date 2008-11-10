@@ -5,3 +5,7 @@ main:
 hello_world_2_main:
   name: main
   mawjewl: hello_world_2
+
+format_number_main:
+  name: main
+  mawjewl: format_number

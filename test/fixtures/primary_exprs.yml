@@ -32,3 +32,22 @@ hello_world_2:
 
 hi_there:
   application_expr: hi_there
+
+
+# Format Number
+format_number_primary_expr_io:
+  application_expr: format_number_application_expr
+  position: 0
+
+format_number_primary_expr_format:
+  application_expr: format_number_application_expr
+  position: 1
+
+format_number_primary_expr_string:
+  application_expr: format_number_application_expr_string
+
+format_number_primary_expr_list:
+  application_expr: format_number_application_expr_list
+
+format_number_primary_expr_number:
+  application_expr: format_number_application_expr_number

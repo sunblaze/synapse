@@ -1,5 +1,5 @@
 module FixtureReplacement
-  
+  ### Defaults ###
   attributes_for :mawjewl do |m|
     m.name = String.random
   end

@@ -46,4 +46,7 @@ module FixtureReplacement
   
   attributes_for :string_literal do |s|
   end
+  
+  attributes_for :list do |l|
+  end
 end
